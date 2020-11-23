@@ -19,6 +19,8 @@ set signcolumn=yes
 set number
 set cursorline
 
+tnoremap <Esc> <C-\><C-n>
+
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'phanviet/vim-monokai-pro'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
