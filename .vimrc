@@ -60,9 +60,12 @@ let g:coc_global_extensions = [
 \ 'coc-discord-rpc'
 \ ]
 
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+augroup NERDTreeOptions
+  autocmd!
+  autocmd vimenter * NERDTree
+  autocmd StdinReadPre * let s:std_in=1
+  autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+augroup END
 
 let g:airline_theme='base16_monokai'
 
