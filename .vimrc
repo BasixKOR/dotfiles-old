@@ -67,6 +67,8 @@ augroup NERDTreeOptions
   autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 augroup END
 
+set clipboard+=unnamedplus
+
 let g:airline_theme='base16_monokai'
 
 syntax on
