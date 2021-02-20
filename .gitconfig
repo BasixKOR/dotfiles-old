@@ -1,0 +1,21 @@
+[core]
+	editor = code --wait
+[author]
+	name = Basix
+	email = basix@basix.tech
+[user]
+	name = Basix
+	email = basix@basix.tech
+[core]
+	excludesfile = ~/.gitexclude
+[winUpdater]
+	recentlySeenVersion = 2.25.0.windows.1
+[pull]
+	rebase = true
+[credential]
+	helper = wincred
+[init]
+	defaultBranch = main
+# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
+[include]
+  path = ~/.netlify/helper/git-config

@@ -1,0 +1,86 @@
+# Prompt
+
+[character]
+vicmd_symbol = "[](bold green) "
+
+# Languages
+
+[elixir]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[package]
+symbol = "▤ "
+
+[python]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[java]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[php]
+symbol = " "
+
+# Git
+
+[git_status]
+deleted = ""
+
+# AWS
+
+[aws]
+symbol = " "
+
+[aws.region_aliases]
+ap-northeast-2 = "kr"
+ap-northeast-1 = "jp"
+eu-west-2 = "gb"
+eu-west-3 = "fr"
+
+# Time
+
+[time]
+disabled = false
+format = "%H:%M"
+utc_time_offset = "+9"
+style = "dimmed"
+
+# Environment
+
+[env_var]
+variable = "WSL_DISTRO_NAME"
+symbol = " "
+style = "bold blue"
+
+[battery]
+full_symbol = "  "
+charging_symbol = "ﮣ "
+discharging_symbol = "  "
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+[memory_usage]
+disabled = false
+format = "using $symbol ${ram_pct} "
+threshold = 85
+symbol = " "
+style = "bold dimmed green"
